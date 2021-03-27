@@ -1,0 +1,220 @@
+:root{
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --light-grayish-magenta:hsl(300, 24%, 96%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --white: hsl(0, 0%, 100%)
+}
+
+html::before, html::after{
+    position: absolute;
+}
+
+html::before{
+    content:url('../assets/images/background/bg-pattern-top-mobile.svg');
+}
+
+@media screen and (min-width: 1096px){
+    html::before{
+        content: url('../assets/images/background/bg-pattern-top-desktop.svg')
+    }
+}
+
+html::after{
+    content:url('../assets/images/background/bg-pattern-bottom-mobile.svg');
+    right: 0;
+    position: fixed;
+    z-index:-1;
+    bottom: -20%
+}
+
+@media screen and (min-width: 1096px){
+    html::after{
+        content:url('../assets/images/background/bg-pattern-bottom-desktop.svg');
+    }
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 1096px){
+    body{
+        display: grid;   
+        max-width: 1440px;
+        margin-left: auto;
+        justify-items: end;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 800px);
+    }
+}
+
+
+.header{
+    text-align: center;
+    padding: 90px 10px 30px;
+}
+
+@media screen and (min-width: 1096px){
+    .header{
+        text-align: left;
+        font-size: 1.4rem;
+        grid-column: 1/2;
+    }
+}
+
+.header__title{
+    font-weight: 700;
+    color: var(--dark-magenta);
+}
+
+.header__subtitle{
+    font-weight: 400;
+    color: var(--dark-grayish-magenta);
+}
+
+@media screen and (min-width: 1096px){
+    .header__subtitle{
+        width: 400px;
+    }
+}
+.rates{
+    text-align: center;
+}
+
+@media screen and (min-width: 1096px){
+    .rates{
+        margin-bottom:0;
+        margin-top: 100px;
+        grid-column: 3/4;
+    }
+}
+
+.rated{
+    background-color: var(--light-grayish-magenta);
+    margin: 15px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1096px){
+    .rated{
+        display: flex;
+        align-items: center;
+        justify-content: star;
+        width: 430px;
+        position: relative;
+    }
+
+    .rated:first-child{
+        left:-150px;
+    }
+    .rated:nth-child(2){
+        left:-100px;
+    }
+    .rated:last-child{
+        left: -50px;
+    }
+}
+
+
+.rated__star{
+    width: 20px;
+    height: 17px;
+    display: inline-block; 
+    background-image:url(../assets/images/icons/icon-star.svg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1096px){
+    .rated__star{
+        margin-right: 0;
+    }
+    .rated__star:last-of-type{
+        margin-right: 50px;
+    }
+    
+}
+
+.rated__text{
+    color: var(--dark-magenta);
+    font-weight: 700;
+}
+
+.testimonials{
+    padding: 50px 0;
+}
+
+@media screen and (min-width: 1096px){
+    .testimonials{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+}
+
+
+
+.testimonial{
+    background-color: var(--dark-magenta);
+    border-radius: 10px;
+    padding: 30px 6px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1096px){
+    .testimonial{
+        width: 350px;
+        margin-bottom: 0;
+        margin-top:-350px;
+        position:relative;
+        margin-right:40px
+    }
+
+    .testimonial:nth-child(2){
+        top:20px;
+    }
+    .testimonial:last-child{
+        top: 40px
+    }
+}
+
+.testimonial__header{
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    padding:10px 40px;
+}
+
+.testimonial__author{
+    margin-left: 20px;
+}
+
+.testimonial__title{
+    font-size: 15px;
+    color: var(--white);
+    margin: 0;
+}
+
+.testimonial__subtitle{
+    color: var(--soft-pink);
+    margin: 0;
+}
+
+.testimonial__image{
+    display: block;
+    border-radius: 50%;
+    max-width: 15%;
+}
+
+.testimonial__text{
+    color: var(--white);
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 400;
+}
