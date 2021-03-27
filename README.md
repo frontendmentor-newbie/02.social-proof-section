@@ -12,7 +12,7 @@ This is a solution to the [Social Proof Section challenge on Frontend Mentor](ht
 
 ## Overview
 ![](./assets/images/screenshot.png)
-- Live Site URL: [Social Proof Section](https://social-proof-section-nahuel-p.vercel.app/)
+- Live Site URL: [Social Proof Section](https://frontendmentor-newbie.github.io/02.social-proof-section/)
 - Solution: [Frontendmentor.io](https://www.frontendmentor.io/solutions/social-proof-section-htmlcss-7YLopYD3o)
 - Challenge: [Hub](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub/social-proof-section-htmlcss-7YLopYD3o)
 
