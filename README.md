@@ -23,6 +23,7 @@ This is a solution to the [Social Proof Section challenge on Frontend Mentor](ht
 - Flexbox
 - Mobile-first workflow
 
+
 ## Author
 - Frontend Mentor - [@Nahuel-P](https://www.frontendmentor.io/profile/Nahuel-P)
 - Twitter - [@Nahuel__P](https://twitter.com/Nahuel__P)
